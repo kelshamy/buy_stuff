@@ -3,9 +3,13 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: Container(
-        color: Colors.white,
-        child: Text('Buy Stuff'),
+      home: Center(
+        child: ListView(
+          children: [
+            Text('Buy Stuff'),
+            Text('Shopping Made Easy'),
+          ],
+        ),
       ),
     ),
   );
