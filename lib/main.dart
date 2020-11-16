@@ -1,14 +1,11 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MyApp(
-      MaterialApp(
-        home: Center(
-          child: Text('Buy Stuff'),
-        ),
+    MaterialApp(
+      home: Container(
+        color: Colors.white,
+        child: Text('Buy Stuff'),
       ),
     ),
   );
