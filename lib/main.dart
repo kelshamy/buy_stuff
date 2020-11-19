@@ -33,8 +33,18 @@ class _HomePageState extends State<HomePage> {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: null),
+              onPressed: () {}),
         ],
+      ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            // header
+            UserAccountsDrawerHeader(
+                accountName: Text('Kathryn El Shamy'),
+                accountEmail: Text('k.elshamy@live.com'))
+          ],
+        ),
       ),
     );
   }
