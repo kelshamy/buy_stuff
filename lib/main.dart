@@ -41,8 +41,15 @@ class _HomePageState extends State<HomePage> {
           children: [
             // header
             UserAccountsDrawerHeader(
-                accountName: Text('Kathryn El Shamy'),
-                accountEmail: Text('k.elshamy@live.com'))
+              accountName: Text('Kathryn El Shamy'),
+              accountEmail: Text('k.elshamy@live.com'),
+              currentAccountPicture: GestureDetector(
+                child: CircleAvatar(
+                  backgroundColor: Colors.grey,
+                  child: Icon(Icons.person),
+                ),
+              ),
+            ),
           ],
         ),
       ),
